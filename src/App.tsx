@@ -19,7 +19,7 @@ const router = createBrowserRouter([
     element: (<Main><BeatyNeat /></Main>),
   },
   {
-    path: "/",
+    path: "/*",
     element: <Main><Acorda /></Main>,
   },
 ]);
