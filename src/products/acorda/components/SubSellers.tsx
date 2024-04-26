@@ -40,7 +40,7 @@ export default function SubSellers() {
                   sx={{
                     height: { xs: 30, sm: 70 },
                   }}
-                  src={'/images/logic-icon.png'}
+                  src={`${process.env.PUBLIC_URL}/images/logic-icon.png`}
                 />
               </Box>
               <Typography component="h3" variant="h5">
@@ -77,7 +77,7 @@ export default function SubSellers() {
                 <Box
                   component="img"
                   sx={{ height: { xs: 30, sm: 70 }}}
-                  src={'/images/garageband-icon.png'}
+                  src={`${process.env.PUBLIC_URL}/images/garageband-icon.png`}
                 />
               </Box>
               <Typography component="h3" variant="h5">
@@ -110,7 +110,7 @@ export default function SubSellers() {
                   sx={{
                     height: { xs: 30, sm: 70 },
                   }}
-                  src={'/images/mainstage-icon.png'}
+                  src={`${process.env.PUBLIC_URL}/images/mainstage-icon.png`}
                 />
               </Box>
               <Typography component="h3" variant="h5" textAlign="center">

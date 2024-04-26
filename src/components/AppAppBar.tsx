@@ -65,8 +65,8 @@ export default function AppAppBar({ mode }: AppAppBarProps) {
                   md: 600,
                 },
                 backgroundImage: {
-                  xs: 'url("/images/lb-logo.png")',
-                  md: 'url("/images/lb-engineerings.png")',
+                  xs: `url("${process.env.PUBLIC_URL}/images/lb-logo.png")`,
+                  md: `url("${process.env.PUBLIC_URL}/images/lb-engineerings.png")`,
                 },
                 backgroundPosition: '0 0',
                 backgroundRepeat: 'no-repeat',

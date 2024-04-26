@@ -65,7 +65,7 @@ export default function Hero(props: HeroProps) {
           >
             <Box
               component="img"
-              src={'/images/acorda-icon.png'}
+              src={`${process.env.PUBLIC_URL}/images/acorda-icon.png`}
               sx={{
                 height: { xs: 50, sm: 110 },
                 backdropFilter: 'blur(24px)',
@@ -90,7 +90,7 @@ export default function Hero(props: HeroProps) {
                 sx={{
                   height: { xs: 200, sm: 320 },
                 }}
-                src={'/images/product-pic-4.png'}
+                src={`${process.env.PUBLIC_URL}/images/product-pic-4.png`}
               />
           <Typography
             variant="h1"
@@ -128,7 +128,7 @@ export default function Hero(props: HeroProps) {
                 sx={{
                   height: { xs: 40, sm: 50 },
                 }}
-                src={'/images/app-ios.svg'}
+                src={`${process.env.PUBLIC_URL}/images/app-ios.svg`}
               />
             </Link>
           </Stack>
