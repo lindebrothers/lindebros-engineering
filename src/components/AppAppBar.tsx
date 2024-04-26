@@ -6,10 +6,10 @@ import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 
 interface AppAppBarProps {
-  mode: PaletteMode;
+
 }
 
-export default function AppAppBar({ mode }: AppAppBarProps) {
+export default function AppAppBar({}: AppAppBarProps) {
   const [open, setOpen] = React.useState(false);
 
   return (

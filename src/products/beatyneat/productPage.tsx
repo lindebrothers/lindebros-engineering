@@ -6,10 +6,10 @@ import Hero from './components/Hero';
 import SubSellers from './components/SubSellers';
 import FAQ from './components/FAQ';
 
-interface LandingPageProps {
+interface BeatyNeatPageProps {
 
 }
-export default function LandingPage({}:LandingPageProps) {
+export default function BeatyNeat({}:BeatyNeatPageProps) {
 
   return (
     <>

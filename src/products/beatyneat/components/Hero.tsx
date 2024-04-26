@@ -104,7 +104,7 @@ export default function Hero({}: HeroProps) {
                 theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
             }}
           >
-            Fantastic retro sounding organ
+            Fantastic tuner
           </Typography>
           <Typography
             textAlign="center"

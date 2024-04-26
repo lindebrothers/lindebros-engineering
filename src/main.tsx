@@ -5,12 +5,14 @@ import Box from '@mui/material/Box';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import AppAppBar from './components/AppAppBar';
 import Footer from './components/Footer';
-import Body from './products/acorda/productPage'
 
 import getLPTheme from './getLPTheme';
 
+interface MainPageProps {
+  children: React.ReactNode;
+}
 
-export default function Main() {
+export default function Main({children}:MainPageProps) {
   const [mode, setMode] = React.useState<PaletteMode>('dark');
   const [showCustomTheme, setShowCustomTheme] = React.useState(true);
   const LPtheme = createTheme(getLPTheme(mode));
@@ -19,9 +21,9 @@ export default function Main() {
   return (
     <ThemeProvider theme={showCustomTheme ? LPtheme : defaultTheme}>
       <CssBaseline />
-      <AppAppBar mode={mode} />
+      <AppAppBar />
       <Box sx={{ bgcolor: 'background.default' }}>
-        <Body mode={mode}/>
+        {children}
         <Footer />
       </Box>
     </ThemeProvider>
