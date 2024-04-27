@@ -104,7 +104,7 @@ export default function Hero({}: HeroProps) {
                 theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
             }}
           >
-            Fantastic tuner
+            Fantastic tuner out now
           </Typography>
           <Typography
             textAlign="center"
