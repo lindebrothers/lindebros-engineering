@@ -5,26 +5,21 @@ import Acorda from './products/acorda/productPage'
 import BeatyNeat from './products/beatyneat/productPage'
 
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const setRouterUrl = (url:string):string => {
-  const baseUrl:string = process.env.ROUTER_BASE_URL ? process.env.ROUTER_BASE_URL : '';
-  return `${baseUrl}${url}`;
-}
-
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: setRouterUrl('/acorda'),
+    path: '/acorda',
     element: (<Main><Acorda /></Main>),
   },
   {
-    path: setRouterUrl('/beatyneat'),
+    path: '/beatyneat',
     element: (<Main><BeatyNeat /></Main>),
   },
   {
-    path: setRouterUrl('/*'),
+    path: '/*',
     element: <Main><Acorda /></Main>,
   },
 ]);
