@@ -9,17 +9,22 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+const setRouterUrl = (url:string):string => {
+  const baseUrl:string = process.env.ROUTER_BASE_URL ? process.env.ROUTER_BASE_URL : '';
+  return `${baseUrl}${url}`;
+}
+
 const router = createBrowserRouter([
   {
-    path: "/acorda",
+    path: setRouterUrl('/acorda'),
     element: (<Main><Acorda /></Main>),
   },
   {
-    path: "/beatyneat",
+    path: setRouterUrl('/beatyneat'),
     element: (<Main><BeatyNeat /></Main>),
   },
   {
-    path: "/*",
+    path: setRouterUrl('/*'),
     element: <Main><Acorda /></Main>,
   },
 ]);

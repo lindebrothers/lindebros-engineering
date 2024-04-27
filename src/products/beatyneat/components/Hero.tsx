@@ -1,17 +1,9 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import { PaletteMode } from '@mui/material';
-import Button from '@mui/material/Button';
-import Image from '@mui/material/';
 import Container from '@mui/material/Container';
-import InputLabel from '@mui/material/InputLabel';
 import Link from '@mui/material/Link';
 import Stack from '@mui/material/Stack';
-import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
-
-import { visuallyHidden } from '@mui/utils';
-import { styled } from '@mui/material/styles';
 import AcordaLogo from './acordaLogo.svg';
 
 interface HeroProps {

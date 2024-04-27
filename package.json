@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "NODE_ENV='production' BUILD_PATH='./docs' PUBLIC_URL='https://lindebrothers.github.io/lindebros-engineering/' react-scripts build",
+    "build": "NODE_ENV='production' BUILD_PATH='./docs' ROUTER_BASE_URL='/lindebros-engineering' PUBLIC_URL='https://lindebrothers.github.io/lindebros-engineering/' react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "lint": "gts lint",
