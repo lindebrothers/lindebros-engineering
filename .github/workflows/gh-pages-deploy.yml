@@ -1,15 +1,16 @@
 on:
   push:
-    tags:
-      - v*
+    #tags:
+    #  - v*
+    branches:
+      - master
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+        uses: actions/checkout@v4
 
       - name: Set up Node.js
         uses: actions/setup-node@v2
