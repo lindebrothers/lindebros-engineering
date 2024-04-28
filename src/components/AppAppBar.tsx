@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
-
+import {Link} from 'react-router-dom'
 
 export default function AppAppBar() {
 
@@ -48,28 +48,29 @@ export default function AppAppBar() {
               px: 0,
             }}
           >
-            <Box
-              sx={(theme) => ({
-                display: {xs: 'flex', md: 'flex' },
-                height: {
-                  xs: 35,
-                  md: 50,
-                },
-                width: {
-                  xs: 35,
-                  md: 600,
-                },
-                backgroundImage: {
-                  xs: `url("${process.env.PUBLIC_URL}/images/lb-logo.png")`,
-                  md: `url("${process.env.PUBLIC_URL}/images/lb-engineerings.png")`,
-                },
-                backgroundPosition: '0 0',
-                backgroundRepeat: 'no-repeat',
-                backgroundSize: 'contain'
-              })}
-            >
-
-            </Box>
+            <Link to={`/`  }>
+              <Box
+                sx={(theme) => ({
+                  display: {xs: 'flex', md: 'flex' },
+                  height: {
+                    xs: 35,
+                    md: 50,
+                  },
+                  width: {
+                    xs: 35,
+                    md: 600,
+                  },
+                  backgroundImage: {
+                    xs: `url("${process.env.PUBLIC_URL}/images/lb-logo.png")`,
+                    md: `url("${process.env.PUBLIC_URL}/images/lb-engineerings.png")`,
+                  },
+                  backgroundPosition: '0 0',
+                  backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'contain'
+                })}
+              >
+              </Box>
+            </Link>
           </Box>
 
 
