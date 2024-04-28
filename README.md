@@ -1,4 +1,4 @@
 # Lindebros Engineering Webpage
 
 ## Deploy
-Content within `./docs` will be deployed to GH pages
+Pipeline will deploy to `GH pages ` when new tag is created
