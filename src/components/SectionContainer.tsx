@@ -3,13 +3,16 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 
 interface YouTubeVideoProps {
-  url?:string
+  id:string;
+  title:string;
+  text:string;
+  children: React.ReactNode;
 }
 
-export default function YouTubeVideo({url}:YouTubeVideoProps) {
+export default function SectionContainer({id, title, text, children}:YouTubeVideoProps) {
   return (
     <Container
-      id="youtubevideo"
+      id={id}
       sx={{
         pt: { xs: 4, sm: 12 },
         pb: { xs: 8, sm: 16 },
@@ -21,25 +24,16 @@ export default function YouTubeVideo({url}:YouTubeVideoProps) {
       }}
     >
         <Typography component="h2" variant="h4" color="text.primary">
-          A quick demo
+          {title}
         </Typography>
         <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mb: { xs: 0, sm: 0 } }}
             >
-              Screen recording when using the acorda AUv3 plugin within Logic Pro.
+              {text}
         </Typography>
-      <iframe
-        width="560"
-        height="315"
-        src={`${url}`}
-        title="YouTube video player"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowFullScreen
-        >
-        </iframe>
+        {children}
       </Container>
   )
 }

@@ -42,6 +42,7 @@ export default function Hero({}: HeroProps) {
           pb: { xs: 0, sm: 0 },
           pl: { xs: 8, sm: 12 },
           pr: { xs: 8, sm: 12 },
+          mb: { xs: 6, sm: 0 },
         }}
       >
         <Stack

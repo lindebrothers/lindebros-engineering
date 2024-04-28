@@ -12,7 +12,7 @@ export default function SubSellers() {
       id="subSellers"
       sx={{
         pt: { xs: 4, sm: 12 },
-        pb: { xs: 8, sm: 16 },
+        pb: { xs: 8, sm: 0 },
         position: 'relative',
         display: 'flex',
         flexDirection: 'column',
@@ -21,7 +21,6 @@ export default function SubSellers() {
       }}
     >
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        
           <Grid
             xs={12}
             md={4}
@@ -38,7 +37,7 @@ export default function SubSellers() {
                 <Box
                   component="img"
                   sx={{
-                    height: { xs: 30, sm: 70 },
+                    height: { xs: 45, sm: 70 },
                   }}
                   src={`${process.env.PUBLIC_URL}/images/logic-icon.png`}
                 />
@@ -76,7 +75,7 @@ export default function SubSellers() {
               >
                 <Box
                   component="img"
-                  sx={{ height: { xs: 30, sm: 70 }}}
+                  sx={{ height: { xs: 45, sm: 70 }}}
                   src={`${process.env.PUBLIC_URL}/images/garageband-icon.png`}
                 />
               </Box>
@@ -108,7 +107,7 @@ export default function SubSellers() {
                 <Box
                   component="img"
                   sx={{
-                    height: { xs: 30, sm: 70 },
+                    height: { xs: 45, sm: 70 },
                   }}
                   src={`${process.env.PUBLIC_URL}/images/mainstage-icon.png`}
                 />
