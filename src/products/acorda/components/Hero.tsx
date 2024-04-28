@@ -146,6 +146,13 @@ export default function Hero() {
             </Link>
           </Stack>
         </Stack>
+        <Typography
+            textAlign="center"
+            color="text.secondary"
+            sx={{ width: { sm: '100%', md: '80%' } }}
+          >
+            Buy now and get a benifitial start up price.
+          </Typography>
       </Container>
     </Box>
   );
