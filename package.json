@@ -28,7 +28,9 @@
     "eject": "react-scripts eject",
     "lint": "eslint",
     "clean": "gts clean",
-    "fix": "eslint \"**/*.{ts,tsx}\" --fix "
+    "fix": "eslint \"**/*.{ts,tsx}\" --fix ",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
