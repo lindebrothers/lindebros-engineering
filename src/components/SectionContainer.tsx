@@ -4,8 +4,8 @@ import Typography from '@mui/material/Typography';
 
 interface YouTubeVideoProps {
   id:string;
-  title:string;
-  text:string;
+  title?:string;
+  text?:string;
   children: React.ReactNode;
 }
 
@@ -23,16 +23,20 @@ export default function SectionContainer({id, title, text, children}:YouTubeVide
         gap: { xs: 3, sm: 6 },
       }}
     >
+        {title && (
         <Typography component="h2" variant="h4" color="text.primary">
           {title}
         </Typography>
-        <Typography
+        )}
+        {text && (
+          <Typography
               variant="body1"
               color="text.secondary"
               sx={{ mb: { xs: 0, sm: 0 } }}
             >
               {text}
-        </Typography>
+          </Typography>
+        )}
         {children}
       </Container>
   )
