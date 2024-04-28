@@ -101,7 +101,7 @@ export default function Hero() {
             color="text.secondary"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
-            We have sampled an retro organ and packaged the sounds by created a AUv3 plugin for your mac. But also as a stand alone app. Compatable with Midi signals.
+            We have sampled an retro organ and packaged the sounds by created a AUv3 plugin for your mac. But also as a stand alone app. Compatible with Midi signals.
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}

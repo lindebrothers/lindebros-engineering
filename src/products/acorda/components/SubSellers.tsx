@@ -80,7 +80,7 @@ export default function SubSellers() {
                 />
               </Box>
               <Typography component="h3" variant="h5">
-                Compatable with Garage Band
+                Compatible with Garage Band
               </Typography>
               <Divider
                 sx={{
@@ -113,7 +113,7 @@ export default function SubSellers() {
                 />
               </Box>
               <Typography component="h3" variant="h5" textAlign="center">
-                Compatable with Main Stage
+                Compatible with Main Stage
               </Typography>
               <Divider
                 sx={{
