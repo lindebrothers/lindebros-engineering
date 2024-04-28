@@ -149,9 +149,9 @@ export default function Hero() {
         <Typography
             textAlign="center"
             color="text.secondary"
-            sx={{ width: { sm: '100%', md: '80%' } }}
+            sx={{ pt: 4, width: { sm: '100%', md: '80%' } }}
           >
-            Buy now and get a benifitial start up price.
+            Buy now and get a good start up price.
           </Typography>
       </Container>
     </Box>
