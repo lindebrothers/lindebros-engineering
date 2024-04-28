@@ -105,6 +105,29 @@ export default function Hero() {
           </Typography>
           <Stack
             direction={{ xs: 'column', sm: 'row' }}
+            spacing={4}
+            useFlexGap
+            sx={{ pt: 2, mb: 4, width: { xs: '100%', sm: 'auto' } }}
+          >
+              <Box
+                component="img"
+                sx={{
+                  height: { xs: 40, sm: 50 },
+                }}
+                src={`${process.env.PUBLIC_URL}/images/au-icon.png`}
+              />
+              <Box
+                component="img"
+                sx={{
+                  height: { xs: 40, sm: 50 },
+                }}
+                src={`${process.env.PUBLIC_URL}/images/midi-icon.png`}
+              />
+          </Stack>
+
+
+          <Stack
+            direction={{ xs: 'column', sm: 'row' }}
             spacing={1}
             useFlexGap
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
