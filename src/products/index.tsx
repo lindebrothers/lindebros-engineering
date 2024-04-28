@@ -13,7 +13,7 @@ const _cls = () => (
   >
     <div style={{position: 'absolute', zIndex: 10, bottom: 10, left: 10}}><a href="https://github.com/akejolin">Akejolin</a></div>
     <div style={{position: 'absolute', zIndex: 10, bottom: 10, right: 10}}><a href="https://akejolin.github.io/about-me">About me</a></div>
-    
+
   </FlexView>
 )
 
