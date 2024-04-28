@@ -6,10 +6,7 @@ import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import AcordaLogo from './acordaLogo.svg';
 
-interface HeroProps {
-  //mode: PaletteMode;
-}
-export default function Hero({}: HeroProps) {
+export default function Hero() {
   return (
     <Box
       id="hero"

@@ -4,12 +4,8 @@ import AppBar from '@mui/material/AppBar';
 import Toolbar from '@mui/material/Toolbar';
 import Container from '@mui/material/Container';
 
-interface AppAppBarProps {
 
-}
-
-export default function AppAppBar({}: AppAppBarProps) {
-  const [open, setOpen] = React.useState(false);
+export default function AppAppBar() {
 
   return (
     <AppBar

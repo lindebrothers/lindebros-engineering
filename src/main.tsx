@@ -13,8 +13,8 @@ interface MainPageProps {
 }
 
 export default function Main({children}:MainPageProps) {
-  const [mode, setMode] = React.useState<PaletteMode>('dark');
-  const [showCustomTheme, setShowCustomTheme] = React.useState(true);
+  const [mode] = React.useState<PaletteMode>('dark');
+  const [showCustomTheme] = React.useState(true);
   const LPtheme = createTheme(getLPTheme(mode));
   const defaultTheme = createTheme({ palette: { mode } });
 

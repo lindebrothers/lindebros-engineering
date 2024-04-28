@@ -4,10 +4,7 @@ import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import SectionContainer from '../../components/SectionContainer'
 
-interface LandingPageProps {
-
-}
-export default function LandingPage({}:LandingPageProps) {
+export default function LandingPage() {
 
   const productName = 'Acorda Audio Unit Plugin'
   const companyName = 'Lindebros engineering'

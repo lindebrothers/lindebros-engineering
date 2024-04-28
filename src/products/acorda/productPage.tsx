@@ -8,10 +8,7 @@ import FAQ from './components/FAQ';
 import YouTubeVideo from '../../components/YoutubeVideo'
 import SectionContainer from '../../components/SectionContainer'
 
-interface LandingPageProps {
-
-}
-export default function LandingPage({}:LandingPageProps) {
+export default function LandingPage() {
 
   return (
     <>
