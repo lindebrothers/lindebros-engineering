@@ -7,6 +7,9 @@ import SubSellers from './components/SubSellers';
 import FAQ from './components/FAQ';
 import YouTubeVideo from '../../components/YoutubeVideo'
 import SectionContainer from '../../components/SectionContainer'
+import Link from '@mui/material/Link';
+import Typography from '@mui/material/Typography';
+
 
 export default function LandingPage() {
 
@@ -29,6 +32,20 @@ export default function LandingPage() {
         </SectionContainer>
         <Divider />
         <FAQ />
+        <Divider />
+        <Box
+          display={'flex'}
+          flexDirection={'column'}
+          alignItems={'center'}
+        >
+          <Typography
+            textAlign="center"
+            color="text.secondary"
+            sx={{ width: { sm: '100%', md: '80%' } }}
+          >
+            Read more about the <Link href={`${process.env.PUBLIC_URL}/#acorda/terms-of-use`}> Terms of Use</Link>.
+          </Typography>
+        </Box>
       </Box>
     </>
   );
