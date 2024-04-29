@@ -27,14 +27,14 @@ export default function FAQ() {
       {
         question: "How do I install?",
         answer: (<>
-          Navigate to the app page at
+          Navigate to the app page at&nbsp;
           <Link href="https://apps.apple.com/se/app/beatyneattuner/id6470951462">AppStore</Link>
-          and download the App to your iPhone.
+          &nbsp;and download and install the App on your iPhone.
         </>),
       },
       {
         question: "What instruments can I use with Beaty Neat tuner?",
-        answer: (<>BeatyNeat Tuner is compatible with sounds from guitars or bass guitars.</>),
+        answer: (<>BeatyNeat Tuner can tune sounds of a guitar or a bass guitar.</>),
       },
       {
         question: "What frequency does the tuner tune?",

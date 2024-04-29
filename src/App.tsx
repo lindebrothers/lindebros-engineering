@@ -4,6 +4,7 @@ import Main from './main';
 import Acorda from './products/acorda/productPage'
 import AcordaTermsOfUse from './products/acorda/TermsOfUse'
 import BeatyNeat from './products/beatyneat/productPage'
+import ProductLists from './products/index'
 
 import {
   createHashRouter,
@@ -25,7 +26,7 @@ const router = createHashRouter([
   },
   {
     path: '/*',
-    element: <Main><Acorda /></Main>,
+    element: <Main><ProductLists /></Main>,
   },
 ]);
 
