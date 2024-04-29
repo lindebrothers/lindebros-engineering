@@ -5,6 +5,10 @@ import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 
+import MusicNoteIcon from '@mui/icons-material/MusicNote';
+import AccessibilityIcon from '@mui/icons-material/Accessibility';
+import MoneyOffIcon from '@mui/icons-material/MoneyOff';
+
 
 export default function SubSellers() {
   return (
@@ -21,7 +25,6 @@ export default function SubSellers() {
       }}
     >
       <Grid container spacing={2} alignItems="center" justifyContent="center">
-        
           <Grid
             xs={12}
             md={4}
@@ -35,16 +38,16 @@ export default function SubSellers() {
                 flexDirection={'column'}
                 alignItems={'center'}
               >
-                <Box
-                  component="img"
+                <MusicNoteIcon
+                 
                   sx={{
-                    height: { xs: 30, sm: 70 },
+                    height: { xs: 60, sm: 60 },
                   }}
-                  src={`${process.env.PUBLIC_URL}/images/logic-icon.png`}
+                  
                 />
               </Box>
               <Typography component="h3" variant="h5">
-                Compatiable with Logic
+                High performance
               </Typography>
               <Divider
                 sx={{
@@ -58,7 +61,7 @@ export default function SubSellers() {
                 component={'span'}
                 textAlign="center"
               >
-                Plug and play with Logic.
+                Using your iPhones mic. Compatible with Guitar and Bass Guitar.
               </Typography>
             </Box>
           </Grid>
@@ -74,14 +77,12 @@ export default function SubSellers() {
                 flexDirection={'column'}
                 alignItems={'center'}
               >
-                <Box
-                  component="img"
-                  sx={{ height: { xs: 30, sm: 70 }}}
-                  src={`${process.env.PUBLIC_URL}/images/garageband-icon.png`}
+                <AccessibilityIcon
+                  sx={{ height: { xs: 60, sm: 60 }}}
                 />
               </Box>
               <Typography component="h3" variant="h5">
-                Compatable with Garage Band
+                Simple to use
               </Typography>
               <Divider
                 sx={{
@@ -94,7 +95,7 @@ export default function SubSellers() {
                 variant="subtitle2"
                 component={'span'}
               >
-                Plug and Play with Garage Band.
+                Super simple and neat design makes it easy to use. Just turn on the button.
               </Typography>
             </Box>
           </Grid>
@@ -105,16 +106,14 @@ export default function SubSellers() {
                 flexDirection={'column'}
                 alignItems={'center'}
               >
-                <Box
-                  component="img"
+                <MoneyOffIcon
                   sx={{
-                    height: { xs: 30, sm: 70 },
+                    height: { xs: 60, sm: 60 },
                   }}
-                  src={`${process.env.PUBLIC_URL}/images/mainstage-icon.png`}
                 />
               </Box>
               <Typography component="h3" variant="h5" textAlign="center">
-                Compatable with Main Stage
+                No banners and tracking
               </Typography>
               <Divider
                 sx={{
@@ -127,7 +126,7 @@ export default function SubSellers() {
                 variant="subtitle2"
                 component={'span'}
               >
-                Plug and play with Main Stage.
+                We hate banners in tools. So no banners. And no tracking. Just a tuner. 
               </Typography>
             </Box>
           </Grid>

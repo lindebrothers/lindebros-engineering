@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import Link from '@mui/material/Link';
+import {Link} from 'react-router-dom'
 import Stack from '@mui/material/Stack';
 import Typography from '@mui/material/Typography';
 import AcordaLogo from './acordaLogo.svg';
@@ -27,60 +27,38 @@ export default function Hero() {
           backgroundPosition: 'center',
           backgroundRepeat: 'no-repeat',
           backgroundSize: '100% 100%',
-          pt: { xs: 14, sm: 20 },
+          pt: { xs: 20, sm: 20 },
           pb: { xs: 0, sm: 0 },
-          pl: { xs: 8, sm: 12 },
-          pr: { xs: 8, sm: 12 },
+          pl: { xs: 0, sm: 0 },
+          pr: { xs: 0, sm: 0 },
         }}
       >
-        <Stack
-          spacing={2}
-          alignItems="center"
+        <Box
+          display={'flex'}
+          flexDirection={'row'}
+          alignItems={'center'}
           justifyContent={'center'}
-          textAlign={'center'}
-          useFlexGap
-          sx={{ width: { xs: '100%', sm: '100%' } }}
+          sx={{
+            height: { xs: 350, sm: 500 },
+            pl: { xs: 3, sm: 4, md: 0 },
+            pr: { xs: 3, sm: 4, md: 0 },
+            width: '100%',
+            backgroundImage:
+              'radial-gradient(ellipse 80% 30% at 50% 100%, hsl(210, 100%, 26%), transparent)',
+            backgroundRepeat: 'no-repeat',
+          }}
         >
-          <Stack
-            spacing={2}
-            alignItems="center"
-            justifyContent={'center'}
-            textAlign={'center'}
-            useFlexGap
-            flexDirection={'row'}
-            sx={{
-              width: { xs: '100%', sm: '50%' }
-            }}
+          <Box
+              sx={{
+
+              }}
           >
             <Box
-              component="img"
-              src={`${process.env.PUBLIC_URL}/images/acorda-icon.png`}
-              sx={(theme) => ({
-                height: { xs: 50, sm: 110 },
-                backdropFilter: 'blur(24px)',
-                border: '0.5px solid',
-                borderColor: 'rgba(255,255,255,0.5)',
-                boxShadow: theme.palette.mode === 'light'
-                ? '0 1px 2px hsla(210, 0%, 0%, 0.05), 0 2px 12px hsla(210, 100%, 80%, 0.5)'
-                : '0 1px 2px hsla(210, 0%, 0%, 0.5), 0 0px 22px hsla(210, 100%, 25%, 1.5)',
-                borderRadius: { xs: 1, sm: 2 },
-              })}
-            />
-            <Box
-              component="img"
-              sx={{
-                height: { xs: 50, sm: 70 },
-              }}
-              src={AcordaLogo}
-            />
-          </Stack>
-          <Box
-                component="img"
-                sx={{
-                  height: { xs: 200, sm: 320 },
-                }}
-                src={`${process.env.PUBLIC_URL}/images/product-pic-4.png`}
-              />
+              display={'flex'}
+              flexDirection={'column'}
+              alignItems={'center'}
+              justifyContent={'center'}
+            >
           <Typography
             variant="h1"
             sx={{
@@ -88,40 +66,81 @@ export default function Hero() {
               flexDirection: { xs: 'column', sm: 'row' },
               alignItems: 'center',
               justifyContent: 'center',
-              fontSize: { xs: 'clamp(3rem, 10vw, 3.5rem)', sm: 'clamp(3rem, 10vw, 4.5rem)' },
-              color: (theme) =>
-                theme.palette.mode === 'light' ? 'primary.main' : 'primary.light',
+              textAlign: 'center',
+              mb: { xs: 4, sm: 6 },
+              fontSize: {
+                xs: 'clamp(1rem, 10vw, 1.8rem)',
+                sm: 'clamp(2.5rem, 10vw, 3rem)',
+                md: 'clamp(3rem, 10vw, 4.5rem)'
+              },
+              color: 'primary.light',
             }}
           >
-            Fantastic tuner out now
+            BeatyNeat Tuner
           </Typography>
           <Typography
-            textAlign="center"
-            color="text.secondary"
-            sx={{ width: { sm: '100%', md: '80%' } }}
+            variant="h4"
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
+              mb: { xs: 1, sm: 1 },
+              fontSize: {
+                xs: 'clamp(0.5rem, 10vw, 0.8rem)',
+                sm: 'clamp(1rem, 10vw, 0.9rem)',
+                md: 'clamp(1.5rem, 10vw, 1.0rem)'
+              },
+            }}
           >
-            We have sampled an retro organ and packaged the sounds by created a AUv3 plugin for your mac. But also as a stand alone app. Compatable with Midi signals.
+            Fantastic performaning tuner for free.
           </Typography>
-          <Stack
-            direction={{ xs: 'column', sm: 'row' }}
-            spacing={1}
-            useFlexGap
-            sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
+          <Typography
+            variant="h4"
+            sx={{
+              display: 'flex',
+              flexDirection: { xs: 'column', sm: 'row' },
+              alignItems: 'center',
+              justifyContent: 'center',
+              textAlign: 'center',
+              fontSize: {
+                xs: 'clamp(0.5rem, 10vw, 0.8rem)',
+                sm: 'clamp(1rem, 10vw, 0.9rem)',
+                md: 'clamp(1.5rem, 10vw, 1.0rem)'
+              },
+            }}
           >
-            <Link
-              href="#"
-              underline="none"
-            >
+            Super simple interface. No bullshit. Just a tuner.
+          </Typography>
+          <Box
+            sx={{
+              mt: { xs: 2, sm: 6 },
+              mb: { xs: 2, sm: 6 },
+            }}
+          >
+            <Link to="https://apps.apple.com/se/app/beatyneattuner/id6470951462" target="_blank">
               <Box
                 component="img"
                 sx={{
+
                   height: { xs: 40, sm: 50 },
                 }}
                 src={`${process.env.PUBLIC_URL}/images/app-ios.svg`}
               />
             </Link>
-          </Stack>
-        </Stack>
+          </Box>
+          </Box>
+          </Box>
+          <Box
+            component="img"
+            sx={{
+              height: { xs: 300, sm: 500 },
+            }}
+            src={`${process.env.PUBLIC_URL}/images/beatyneat-product2.png`}
+          />
+        </Box>
+
       </Container>
     </Box>
   );
