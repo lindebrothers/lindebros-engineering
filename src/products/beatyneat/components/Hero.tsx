@@ -94,7 +94,7 @@ export default function Hero() {
               },
             }}
           >
-            Fantastic performaning tuner for free.
+            Fantastic performing tuner for free.
           </Typography>
           <Typography
             variant="h4"

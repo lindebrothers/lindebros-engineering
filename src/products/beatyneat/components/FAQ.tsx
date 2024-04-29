@@ -38,7 +38,7 @@ export default function FAQ() {
       },
       {
         question: "What frequency does the tuner tune?",
-        answer: (<>The frequency for the note A in the treble stave is 440 Hz</>),
+        answer: (<>The app is compatible with the frequency for the note A in the treble stave of 440 Hz</>),
       }
     ]
 
