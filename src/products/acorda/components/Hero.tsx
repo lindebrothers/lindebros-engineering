@@ -107,7 +107,7 @@ export default function Hero() {
             direction={{ xs: 'column', sm: 'row' }}
             spacing={4}
             useFlexGap
-            sx={{ pt: 2, mb: 4, width: { xs: '100%', sm: 'auto' } }}
+            sx={{ pt: 2, mb: 4, width: { xs: 'auto', sm: 'auto' } }}
           >
               <Box
                 component="img"

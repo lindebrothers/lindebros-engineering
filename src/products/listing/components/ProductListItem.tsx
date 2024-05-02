@@ -9,7 +9,7 @@ export interface IListItem {
   secondaryTitle: string;
   image: string;
   path: string;
-  imageHeight?: { xs: number, sm: number }
+  imageHeight?: { xs: number, sm: number },
 }
 export interface ListItemProps {
   item:IListItem;
@@ -19,17 +19,7 @@ export interface ListItemProps {
 export default function ListItem({item}:ListItemProps) {
   const navigate = useNavigate();
   return (
-    <Box
-      onClick={() => navigate(item.path)}
-      id={`listItem-${item.path}`}
-      sx={(theme) => ({
-        width: '100%',
-        backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% -20%, hsl(210, 100%, 16%), transparent)',
-        backgroundRepeat: 'no-repeat',
-        cursor: 'pointer'
-      })}
-    >
+
     <Box
       id="hero"
       sx={(theme) => ({
@@ -39,20 +29,7 @@ export default function ListItem({item}:ListItemProps) {
         backgroundRepeat: 'no-repeat',
       })}
     >
-      <Container
-        sx={{
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          backgroundPosition: 'center',
-          backgroundRepeat: 'no-repeat',
-          backgroundSize: '100% 100%',
-          pt: { xs: 20, sm: 20 },
-          pb: { xs: 0, sm: 0 },
-          pl: { xs: 0, sm: 0 },
-          pr: { xs: 0, sm: 0 },
-        }}
-      >
+
         <Box
           display={'flex'}
           flexDirection={'row'}
@@ -62,9 +39,11 @@ export default function ListItem({item}:ListItemProps) {
             height: { xs: 350, sm: 500 },
             pl: { xs: 3, sm: 4, md: 0 },
             pr: { xs: 3, sm: 4, md: 0 },
+            backgroundColor:'red',
+            width: '100%',
           }}
         >
-          <Box sx={{}}>
+          <Box sx={{width:'100%'}}>
             <Box
               display={'flex'}
               flexDirection={'column'}
@@ -113,16 +92,19 @@ export default function ListItem({item}:ListItemProps) {
             </Box>
           </Box>
           <Box
-            component="img"
             sx={{
-              height: item.imageHeight ? item.imageHeight : { xs: 300, sm: 500 },
+              //backgroundColor:'yellow'
             }}
-            src={`${item.image}`}
-          />
+          >
+            <Box
+              component="img"
+              sx={{
+                height: item.imageHeight ? item.imageHeight : { xs: 300, sm: 500 },
+              }}
+              src={`${item.image}`}
+            />
+          </Box>
         </Box>
-
-      </Container>
-    </Box>
     </Box>
   );
 }
