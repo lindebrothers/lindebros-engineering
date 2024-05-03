@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "https://lindebrothers.github.io/lindebros-engineering/static/css/main.b6ddda45.css",
-    "main.js": "https://lindebrothers.github.io/lindebros-engineering/static/js/main.b16ac6b0.js",
+    "main.js": "https://lindebrothers.github.io/lindebros-engineering/static/js/main.92151b06.js",
     "static/js/453.2b062bfc.chunk.js": "https://lindebrothers.github.io/lindebros-engineering/static/js/453.2b062bfc.chunk.js",
     "static/media/acordaLogo.svg": "https://lindebrothers.github.io/lindebros-engineering/static/media/acordaLogo.2105bd831bf315c9af66d747aa3fa697.svg",
     "index.html": "https://lindebrothers.github.io/lindebros-engineering/index.html",
     "main.b6ddda45.css.map": "https://lindebrothers.github.io/lindebros-engineering/static/css/main.b6ddda45.css.map",
-    "main.b16ac6b0.js.map": "https://lindebrothers.github.io/lindebros-engineering/static/js/main.b16ac6b0.js.map",
+    "main.92151b06.js.map": "https://lindebrothers.github.io/lindebros-engineering/static/js/main.92151b06.js.map",
     "453.2b062bfc.chunk.js.map": "https://lindebrothers.github.io/lindebros-engineering/static/js/453.2b062bfc.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b6ddda45.css",
-    "static/js/main.b16ac6b0.js"
+    "static/js/main.92151b06.js"
   ]
 }
