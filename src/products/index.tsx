@@ -27,8 +27,8 @@ export default function ProductsListPage() {
     },
     {
       data: {
-        primaryTitle: 'BeatyNeat Tuner',
-        secondaryTitle: 'IOS App',
+        primaryTitle: 'BeatyNeat IOS APP Tuner',
+        secondaryTitle: 'Super simple interface. No bullshit. Just a tuner',
         image: `${process.env.PUBLIC_URL}/images/beatyneatListItem.png`,
         path: '/beatyneat',
         imageHeight: { xs: 200, sm: 400 },

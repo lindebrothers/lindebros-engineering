@@ -20,56 +20,6 @@ const Logos = () => {
   return(
   <>
     <Box
-      display={'flex'}
-      flexDirection={'row'}
-      alignItems={'center'}
-      justifyContent={'space-between'}
-      padding={0}
-      sx={{
-        //border:'1px solid yellow',
-        width: '100%',
-        ml: { xs: 0, sm: 0, md:0 },
-        mr: { xs: 8, sm: 8, md:0 },
-      }}
-    >
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 30, sm: 40 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/au-icon.png`}
-      />
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 30, sm: 40 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/midi-icon.png`}
-      />
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 30, sm: 40 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/logic-icon.png`}
-      />
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 30, sm: 40 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/garageband-icon.png`}
-      />
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 30, sm: 40 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/mainstage-icon.png`}
-      />
-
-    </Box>
-    <Box
       flexDirection={'row'}
       alignItems={'center'}
       justifyContent={'center'}
@@ -78,7 +28,7 @@ const Logos = () => {
         width: '100%',
       }}
     >
-      <Link to="https://www.appstore.com/acorda" target="_blank">
+      <Link to="https://apps.apple.com/se/app/beatyneattuner/id6470951462" target="_blank">
         <Box
           id="appstore-link"
           component="img"
@@ -108,9 +58,9 @@ export default function ListItem({item}:ListItemProps) {
       sx={(theme) => ({
         width: '100%',
         backgroundImage:
-          'radial-gradient(ellipse 80% 50% at 50% 100%, hsl(0, 20%, 19%), transparent)',
+          'radial-gradient(ellipse 80% 50% at 50% 100%, hsl(-30, 100%, 90%), transparent)',
         backgroundRepeat: 'no-repeat',
-        backgroundColor: '#120B00'
+        backgroundColor: '#F182B9'
       })}
     >
 
@@ -192,7 +142,7 @@ export default function ListItem({item}:ListItemProps) {
             <Box
               component="img"
               sx={{
-                width: { xs: '30%', sm: '30%', md: '40%' },
+                width: { xs: '40%', sm: '40%', md: '40%' },
               }}
               src={`${item.image}`}
             />
