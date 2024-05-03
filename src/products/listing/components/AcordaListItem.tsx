@@ -110,7 +110,9 @@ export default function ListItem({item}:ListItemProps) {
         backgroundImage:
           'radial-gradient(ellipse 80% 50% at 50% 100%, hsl(0, 20%, 19%), transparent)',
         backgroundRepeat: 'no-repeat',
-        backgroundColor: '#120B00'
+        backgroundColor: '#120B00',
+        borderRadius:1,
+        boxShadow: '0 1px 2px hsla(210, 0%, 0%, 0.5), 0 0px 22px hsla(210, 100%, 25%, 1.5)'
       })}
     >
 
