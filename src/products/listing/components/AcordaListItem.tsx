@@ -1,7 +1,7 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
-import {useNavigate} from 'react-router-dom'
+import {Link, useNavigate} from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 
 export interface IListItem {
@@ -16,7 +16,8 @@ export interface ListItemProps {
   onClick?: Function;
 }
 
-const Logos = () => (
+const Logos = () => {
+  return(
   <>
     <Box
       display={'flex'}
@@ -25,9 +26,9 @@ const Logos = () => (
       justifyContent={'space-between'}
       padding={0}
       sx={{
-        // border:'1px solid yellow',
+        //border:'1px solid yellow',
         width: '100%',
-        ml: { xs: 8, sm: 8, md:0 },
+        ml: { xs: 0, sm: 0, md:0 },
         mr: { xs: 8, sm: 8, md:0 },
       }}
     >
@@ -77,23 +78,32 @@ const Logos = () => (
         width: '100%',
       }}
     >
-      <Box
-        component="img"
-        sx={{
-          height: { xs: 40, sm: 50 },
-        }}
-        src={`${process.env.PUBLIC_URL}/images/app-ios.svg`}
-      />
+      <Link to="https://www.appstore.com/acorda" target="_blank">
+        <Box
+          id="appstore-link"
+          component="img"
+          sx={{
+            height: { xs: 40, sm: 50 },
+            border: 'none',
+          }}
+          src={`${process.env.PUBLIC_URL}/images/app-ios.svg`}
+        />
+      </Link>
     </Box>
   </>
-);
+)};
 
 export default function ListItem({item}:ListItemProps) {
   const navigate = useNavigate();
+  const clicked = (e:any) => {
+    if (e.target.getAttribute("id") !== 'appstore-link') {
+      navigate(item.path)
+    }
+  }
   return (
 
     <Box
-    onClick={() => navigate(item.path)}
+      onClick={(e) => clicked(e)}
       id="hero"
       sx={(theme) => ({
         width: '100%',
@@ -126,6 +136,7 @@ export default function ListItem({item}:ListItemProps) {
               pr:{xs: 2, sm: 2, md: 8},
               pt:{xs: 8, sm: 8, md: 0},
             }}
+            
           >
 
             <Typography
@@ -198,7 +209,6 @@ export default function ListItem({item}:ListItemProps) {
             </Box>
           </Box>
         </Box>
-      
     </Box>
   );
 }
