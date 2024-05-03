@@ -1,5 +1,6 @@
 import * as React from 'react';
 import AcordaListItem, {IListItem as AcordaItem} from './listing/components/AcordaListItem';
+import BeatyNeatListItem, {IListItem as BeatyNeatItem} from './listing/components/BeatyNeatListItem';
 
 
 import Box from '@mui/material/Box';
@@ -28,7 +29,7 @@ export default function ProductsListPage() {
       data: {
         primaryTitle: 'BeatyNeat Tuner',
         secondaryTitle: 'IOS App',
-        image: `${process.env.PUBLIC_URL}/images/beatyneat-product2.png`,
+        image: `${process.env.PUBLIC_URL}/images/beatyneatListItem.png`,
         path: '/beatyneat',
         imageHeight: { xs: 200, sm: 400 },
       },
@@ -60,8 +61,12 @@ export default function ProductsListPage() {
           //backgroundColor:'green'
         }}
       >
-        <AcordaListItem item={items[0].data} />
-
+        <Box sx={{width:'100%'}}>
+          <AcordaListItem item={items[0].data} />
+        </Box>
+        <Box sx={{width:'100%', pt:8}}>
+          <BeatyNeatListItem item={items[1].data} />
+        </Box>
       </Container>
     </Box>
   );

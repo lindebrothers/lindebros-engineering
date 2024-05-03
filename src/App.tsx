@@ -3,6 +3,7 @@ import './App.css';
 import Main from './main';
 import Acorda from './products/acorda/productPage'
 import AcordaTermsOfUse from './products/acorda/TermsOfUse'
+import AcordaPrivacyPolicy from './products/acorda/privacyPolicy'
 import BeatyNeat from './products/beatyneat/productPage'
 import ProductLists from './products/index'
 
@@ -19,6 +20,10 @@ const router = createHashRouter([
   {
     path: '/acorda/terms-of-use',
     element: (<Main><AcordaTermsOfUse /></Main>),
+  },
+  {
+    path: '/acorda/privacy-policy',
+    element: (<Main><AcordaPrivacyPolicy /></Main>),
   },
   {
     path: '/beatyneat',
