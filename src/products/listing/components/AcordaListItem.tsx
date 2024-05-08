@@ -138,7 +138,6 @@ export default function ListItem({item}:ListItemProps) {
               pr:{xs: 2, sm: 2, md: 8},
               pt:{xs: 8, sm: 8, md: 0},
             }}
-            
           >
 
             <Typography
@@ -198,6 +197,27 @@ export default function ListItem({item}:ListItemProps) {
               }}
               src={`${item.image}`}
             />
+            <Box sx={{
+              display: 'flex',
+              position: 'relative',
+
+            }}>
+              <Box sx={{
+                display: 'flex',
+                position: 'absolute',
+                right:{ xs: '80px', sm: '100px', md: '80px', lg: '100px' },
+                bottom:{ xs: '10px', sm: '0px', md: '10px', lg: '-40px' }
+              }}>
+                <Box
+                  component="img"
+                  sx={{
+                    width: { xs: '100px', sm: '150px', md: '150px', lg: '200px' },
+                    transform: 'rotate(4deg)',
+                  }}
+                  src={`${process.env.PUBLIC_URL}/images/no10musicApp.png`}
+                />
+              </Box>
+            </Box>
             <Box sx={{
               width: '100%',
               display: { xs: 'flex', sm: 'flex', md:'none' },
