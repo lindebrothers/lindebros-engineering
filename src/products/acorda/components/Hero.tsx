@@ -133,7 +133,7 @@ export default function Hero() {
             sx={{ pt: 2, width: { xs: '100%', sm: 'auto' } }}
           >
             <Link
-              href="#"
+              href="https://apps.apple.com/se/app/acorda/id6499473804?l=en-GB&mt=12"
               underline="none"
             >
               <Box

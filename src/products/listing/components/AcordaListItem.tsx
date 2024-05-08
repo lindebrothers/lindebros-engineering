@@ -78,7 +78,7 @@ const Logos = () => {
         width: '100%',
       }}
     >
-      <Link to="https://www.appstore.com/acorda" target="_blank">
+      <Link to="https://apps.apple.com/se/app/acorda/id6499473804?l=en-GB&mt=12" target="_blank">
         <Box
           id="appstore-link"
           component="img"

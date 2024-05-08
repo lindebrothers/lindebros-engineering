@@ -26,9 +26,9 @@ export default function FAQ() {
     const pageProtocol:PageProtocol[] = [
       {
         question: "How do I install?",
-        answer: (<>Download app via AppStore
-        <Link> appstore.com/acorda </Link>
-        and make sure app is correctly installed in you application folder.</>),
+        answer: (<>Download the App via AppStore &nbsp;
+        <Link href="https://apps.apple.com/se/app/acorda/id6499473804?l=en-GB&mt=12" target="_blank" >https://apps.apple.com/se/app/acorda/id6499473804?l=en-GB&mt=12</Link>
+        &nbsp;and make sure app is correctly installed in you application folder.</>),
       },
       {
         question: "How do I start using Acorda in Logic, Garage band or Main stage?",
