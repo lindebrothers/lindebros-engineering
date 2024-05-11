@@ -1,6 +1,5 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
-import Container from '@mui/material/Container';
 import {Link, useNavigate} from 'react-router-dom'
 import Typography from '@mui/material/Typography';
 
@@ -214,7 +213,7 @@ export default function ListItem({item}:ListItemProps) {
                     width: { xs: '100px', sm: '150px', md: '150px', lg: '200px' },
                     transform: 'rotate(4deg)',
                   }}
-                  src={`${process.env.PUBLIC_URL}/images/no10musicApp.png`}
+                  src={`${process.env.PUBLIC_URL}/images/crafted.png`}
                 />
               </Box>
             </Box>
