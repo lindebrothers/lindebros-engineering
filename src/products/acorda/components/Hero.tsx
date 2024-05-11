@@ -97,21 +97,21 @@ export default function Hero() {
             Fantastic retro sounding organ
           </Typography>
           <Typography
-            textAlign="center"
+            textAlign="left"
             color="text.secondary"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
             Imagine the ethereal sounds of an ancient organ, meticulously sampled and digitised to perfection. Now, picture that same transcendent experience at your fingertips, seamlessly integrated into your favorite music production software like Logic Pro, MainStage or GarageBand. 
           </Typography>
           <Typography
-            textAlign="center"
+            textAlign="left"
             color="text.secondary"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
           Acorda isn't just another plugin – it's a masterpiece crafted by musicians, for musicians. Whether you're composing your next chart-topping hit or simply exploring your creative boundaries, Acorda delivers unparalleled quality and versatility.
           </Typography>
           <Typography
-            textAlign="center"
+            textAlign="left"
             color="text.secondary"
             sx={{ width: { sm: '100%', md: '80%' } }}
           >
